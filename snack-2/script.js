@@ -5,25 +5,25 @@
 
 var zucchine = [
     {"varietà": "Moscata",
-    "peso": 30,
+    "peso": 300,
     "lunghezza": 20,
 },
     {"varietà": "Turbante",
-    "peso": 20,
+    "peso": 200,
     "lunghezza": 32,
     },
 
     {"varietà": "Iron Cup",
-    "peso": 10,
+    "peso": 100,
     "lunghezza": 20,
 },
     {"varietà": "Delica",
-    "peso": 25,
+    "peso": 250,
     "lunghezza": 32,
     },
 
     {"varietà": "Mini Kawaii Lady.",
-    "peso": 10,
+    "peso": 100,
     "lunghezza": 20,
 },
     {"varietà": "Butternut Violina",
@@ -31,22 +31,22 @@ var zucchine = [
     "lunghezza": 32,
     },
     {"varietà": "Hokkaido",
-    "peso": 10,
+    "peso": 100,
     "lunghezza": 20,
 },
     {"varietà": "Spaghetti",
-    "peso": 20,
+    "peso": 200,
     "lunghezza": 32,
     },
     {"varietà": "Verde",
-    "peso": 30,
+    "peso": 300,
     "lunghezza": 20,
 }
 ];
 
 var pesoTotale = 0;
 for(var i = 0; i< zucchine.length; i ++){
-    console.log(`il peso della zucchina singola: ${zucchine[i].peso} grammi`);
+    console.log(`il peso della zucca singola: ${zucchine[i].peso} grammi`);
     
     pesoTotale = parseInt(pesoTotale + zucchine[i].peso);
 }
