@@ -4,6 +4,22 @@
 // La funzione ritornerà un nuovo array con i valori che hanno la posizione
 // compresa tra “a” e “b”
 
+function getRndInteger(min, max) {
+  randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+  return randomNumber;
+}
+
+
+alert("inserisci due numeri tra 1 e 5, il primo numero deve essere più piccolo del secondo");
+var numA = parseInt(prompt("Inserisci il primo numero"));
+while(isNaN(numA) == true){
+  var numA = parseInt(prompt("Errore,Inserisci il primo numero"));
+}
+var numB = parseInt(prompt("Inserisci il secondo numero"));
+while(numA > numB || (isNaN(numB) == true)){
+  var numB = parseInt(prompt("Errore,il secondo numero che deve essere più grande del primo"));
+}
+
 function myfunction(arr,numA, numB){
 var nuovoArray = [];
 var posizioneDelArr = [];
@@ -20,37 +36,16 @@ var posizioneDelArr = [];
               console.log(nuovoArray);
     }
 
-
-
+  
     var arrStringa = ["mela","pera","fragola","ananas","cocco" ];
-    myfunction(arrStringa,1, 3)
+    myfunction(arrStringa,numA, numB)
 
     var arrNum = [1,2,3,4,5];
-    myfunction(arrNum,1, 3)
+    myfunction(arrNum,numA, numB)
 
-    
-
-
+  
 
 
 
 
-// arr 6
-// numA 1
-// numB 3
 
-// arr[i]>numA |
-// 0 > 1 false
-// 1 > 1 false
-// 2 > 1 true
-// 3 > 1 true
-// 4 > 1 true
-// 5 > 1 true
-
-// arr[i]<numB |
-// 0 < 3 true
-// 1 < 3 true
-// 2 < 3 true
-// 3 < 3 false
-// 4 < 3 false
-// 5 < 3 false
