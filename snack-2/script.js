@@ -6,11 +6,11 @@
 var zucchine = [
     {"varietà": "Moscata",
     "peso": 300,
-    "lunghezza": 20,
+    "lunghezza": 14,
 },
     {"varietà": "Turbante",
     "peso": 200,
-    "lunghezza": 32,
+    "lunghezza": 21,
     },
 
     {"varietà": "Iron Cup",
@@ -19,7 +19,7 @@ var zucchine = [
 },
     {"varietà": "Delica",
     "peso": 250,
-    "lunghezza": 32,
+    "lunghezza": 10,
     },
 
     {"varietà": "Mini Kawaii Lady.",
@@ -28,15 +28,15 @@ var zucchine = [
 },
     {"varietà": "Butternut Violina",
     "peso": 50,
-    "lunghezza": 32,
+    "lunghezza": 12,
     },
     {"varietà": "Hokkaido",
     "peso": 100,
-    "lunghezza": 20,
+    "lunghezza": 9,
 },
     {"varietà": "Spaghetti",
     "peso": 200,
-    "lunghezza": 32,
+    "lunghezza":6,
     },
     {"varietà": "Verde",
     "peso": 300,
@@ -44,12 +44,25 @@ var zucchine = [
 }
 ];
 
-var pesoTotale = 0;
-for(var i = 0; i< zucchine.length; i ++){
-    console.log(`il peso della zucca singola: ${zucchine[i].peso} grammi`);
-    
-    pesoTotale = parseInt(pesoTotale + zucchine[i].peso);
+var zucchinePiccole = [];
+var zucchineGrande = [];
+
+for (var i = 0; i<zucchine.length; i ++){
+    if((zucchine[i].lunghezza)<15){
+        zucchinePiccole.push(zucchine[i]);
+    }else{
+        zucchineGrande.push(zucchine[i]);
+    }
 }
 
-console.log(`il peso totale: ${pesoTotale} grammi`);
+console.log(zucchinePiccole);
+console.log(zucchineGrande);
 
+// for(var i = 0; i<zucchine.length; i ++){
+//     if (zucchine[i].lunghezza)<15){
+//         zucchinePiccole.push(zucchine[i]);
+//         else if{
+//             zucchineGrande.push(zucchine[i]);
+//         }
+//     }
+// }
