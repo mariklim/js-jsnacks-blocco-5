@@ -1,7 +1,7 @@
 // Scrivi una funzione che accetti una stringa come argomento e la ritorni
 // girata (es. Ciao -> oaiC)
 
-function wordPalindrome(wordToControl){
+function wordRevers(wordToControl){
     var wordSplit = wordToControl.split("").reverse();
     var wordRevers = wordSplit.join('');
    return wordRevers;
@@ -9,4 +9,4 @@ function wordPalindrome(wordToControl){
 
 
 
-console.log(wordPalindrome("parola"));
+console.log(wordRevers("parola"));
