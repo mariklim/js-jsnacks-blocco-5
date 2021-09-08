@@ -10,3 +10,4 @@ function wordRevers(wordToControl){
 
 
 console.log(wordRevers("parola"));
+
