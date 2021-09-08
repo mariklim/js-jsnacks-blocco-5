@@ -4,41 +4,41 @@
 
 
 var zucchine = [
-    {"varietà": "1",
+    {"varietà": "Moscata",
     "peso": 300,
     "lunghezza": 20,
 },
-    {"varietà": "2",
+    {"varietà": "Turbante",
     "peso": 200,
     "lunghezza": 32,
     },
 
-    {"varietà": "3",
+    {"varietà": "Iron Cup",
     "peso": 100,
     "lunghezza": 20,
 },
-    {"varietà": "4",
+    {"varietà": "Delica",
     "peso": 250,
     "lunghezza": 32,
     },
 
-    {"varietà": "5",
+    {"varietà": "Mini Kawaii Lady.",
     "peso": 100,
     "lunghezza": 20,
 },
-    {"varietà": "6",
+    {"varietà": "Butternut Violina",
     "peso": 50,
     "lunghezza": 32,
     },
-    {"varietà": "7",
+    {"varietà": "Hokkaido",
     "peso": 100,
     "lunghezza": 20,
 },
-    {"varietà": "8",
+    {"varietà": "Spaghetti",
     "peso": 200,
     "lunghezza": 32,
     },
-    {"varietà": "9",
+    {"varietà": "Verde",
     "peso": 300,
     "lunghezza": 20,
 }
@@ -50,4 +50,5 @@ for(var i = 0; i< zucchine.length; i ++){
     pesoTotale = pesoTotale + zucchine[i].peso;
 }
 
-console.log("il peso totale: " + pesoTotale );
+console.log(`il peso totale: : ${pesoTotale}` grammi);
+
