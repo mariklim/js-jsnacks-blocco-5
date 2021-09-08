@@ -57,16 +57,3 @@ for (var i = 0; i<zucchine.length; i ++){
 
 console.log(zucchinePiccole);
 console.log(zucchineGrande);
-
-
-var pesoTotalePiccole = 0;
-for(var i = 0; i< zucchinePiccole.length; i ++){
-    pesoTotalePiccole = parseInt(pesoTotalePiccole + zucchinePiccole[i].peso);
-}
-
-var pesoTotaleGrande = 0;
-for(var i = 0; i< zucchineGrande.length; i ++){
-    pesoTotaleGrande = parseInt(pesoTotaleGrande + zucchineGrande[i].peso);
-}
-console.log(pesoTotalePiccole);
-console.log(pesoTotaleGrande);
